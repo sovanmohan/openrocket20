@@ -1,33 +1,37 @@
 {
-  "bin": {
-    "openrocket20": "jdeploy-bundle/jdeploy.js"
-  },
-  "author": "",
-  "description": "jDeploy Swing Starter Project",
-  "main": "index.js",
-  "preferGlobal": true,
-  "repository": "",
-  "version": "1.0-SNAPSHOT",
-  "jdeploy": {
-    "jdk": false,
-    "javaVersion": "17",
-    "jar": "target/openrocket20-1.0-SNAPSHOT.jar",
-    "javafx": false,
-    "title": "Openrocket20"
-  },
-  "dependencies": {
-    "command-exists-promise": "^2.0.2",
-    "node-fetch": "2.6.7",
-    "shelljs": "^0.8.4",
-    "tar": "^4.4.8",
-    "yauzl": "^2.10.0"
-  },
-  "license": "ISC",
-  "name": "openrocket20",
-  "files": [
-    "jdeploy-bundle"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+    "bin": {"gluegen": "jdeploy-bundle/jdeploy.js"},
+    "author": "sovanmohan",
+    "description": "test16",
+    "main": "index.js",
+    "preferGlobal": true,
+    "repository": "",
+    "version": "1.0.0",
+    "jdeploy": {
+        "jdk": true,
+        "javaVersion": "17",
+        "cheerpj": {
+            "githubPages": {
+                "branchPath": "{{ branch }}",
+                "tagPath": "app",
+                "branch": "gh-pages",
+                "enabled": true
+            },
+            "enabled": true
+        },
+        "jar": "lib/gluegen.jar",
+        "javafx": false,
+        "title": "Gluegen"
+    },
+    "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+    },
+    "license": "ISC",
+    "name": "gluegen",
+    "files": ["jdeploy-bundle"],
+    "scripts": {"test": "echo \"Error: no test specified\" && exit 1"},
+    "homepage": "localhost:8080"
 }
